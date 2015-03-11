@@ -1,0 +1,61 @@
+octopus:
+  environments:
+    - development
+    - production
+    - test
+  development:
+    foo:
+      adapter: mysql2
+      database: foo_dev
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
+
+    bar:
+      adapter: mysql2
+      database: bar_dev
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
+
+  production:
+    foo:
+      adapter: mysql2
+      database: foo
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
+
+    bar:
+      adapter: mysql2
+      database: bar
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
+
+  test:
+    foo:
+      adapter: mysql2
+      database: foo_test
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
+
+    bar:
+      adapter: mysql2
+      database: bar_test
+      host: localhost
+      username: root
+      password:
+      pool: 5
+      timeout: 5000
